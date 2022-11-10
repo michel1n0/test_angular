@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class CompaComponent {
 
+  nombre = '';
+  apellido = '';
+
+  recibirEvento(e: any) {
+    this.nombre = e.target.value;
+  }
+
 }
