@@ -1,1 +1,9 @@
-<h1>Hola Coders</h1>
+<h1>One way Binding</h1>
+<p>Nombre: </p> <input type="text" (keyup)="recibirEvento($event)">
+
+<h2>Hola {{nombre}}</h2>
+
+<h1>Two Way Binding</h1>
+<p>Apellido: </p> <input [(ngModel)]="apellido">
+
+<h2>Hola {{apellido}}</h2>
